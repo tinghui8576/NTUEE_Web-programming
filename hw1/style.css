@@ -160,15 +160,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.co {
-  height: 5vh;
-  width: 10%;
-  top: 70%;
-  position: absolute;
-  left: 2%;
-  float: inline;
-  background-color:green;
-}
+
 #m5 {
   left:60%;
 }
@@ -216,7 +208,15 @@
   left: 20%;
 }
 
-
+@media screen and (min-width: 1600px){
+  .p5{
+    width: 120pt;
+    left: 10%;
+  }
+  #m5{
+    left:50%;
+  }
+}
 /* attenders name*/
 .name1,.name2,.name3,.name4,.name5,.name6 {
   font-size: 10pt;
@@ -257,27 +257,111 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .name6 {
+    bottom: -75vh;
+    left: -12vw;
+  }
+  .pin {
+    bottom: -71.5vh;
+    left: -14vw;
+  }
+  .micro{
+    left:60%
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px){
+  .name6 {
+    bottom: -75vh;
+    left: -11vw;
+  }
+  .pin {
+    bottom: -72.5vh;
+    left: -13vw;
+  }
+  .micro{
+    left:65%
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px){
+  .name6 {
+    bottom: -75vh;
+    left: -10vw;
+  }
+  .pin {
+    bottom: -72.5vh;
+    left: -12vw;
+  }
+  .micro{
+    left:70%
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px){
+  .name6 {
+    bottom: -75vh;
+    left: -9vw;
+  }
+  .pin {
+    bottom: -73vh;
+    left: -11vw;
+  }
+  .micro{
+    left:75%
+  }
+}
 @media screen and (min-width: 2000px){
   .name6 {
-    bottom: -71vh;
+    bottom: -72.5vh;
     left: -5vw;
   }
   .pin {
-    bottom: -69.5vh;
+    bottom: -71.5vh;
     left: -6vw;
   }
 }
-@media screen and (min-width: 2200px){
+@media screen and (min-width: 2300px) and (max-width: 2600px){
   .name6 {
-    bottom: -70vh;
+    bottom: -74vh;
     left: -4vw;
   }
   .pin {
-    bottom: -68.5vh;
+    bottom: -73vh;
     left: -5vw;
   }
 }
 
+@media screen and (min-width: 2600px) and (max-width: 3300px) {
+  .name6 {
+    bottom: -76vh;
+    left: -3vw;
+  }
+  .pin {
+    bottom: -75.5vh;
+    left: -4vw;
+  }
+}
+
+@media screen and (min-width: 3300px)  and (max-width: 5000px) {
+  .name6 {
+    bottom: -78vh;
+    left: -1.5vw;
+  }
+  .pin {
+    bottom: -77.5vh;
+    left: -2.5vw;
+  }
+}
+
+@media screen and (min-width: 5000px)   {
+  .name6 {
+    bottom: -80vh;
+    left: 0vw;
+  }
+  .pin {
+    bottom: -79.7vh;
+    left: -0.5vw;
+  }
+}
 /* other attenders avatar*/
 .avatar2 {
   display: block;
