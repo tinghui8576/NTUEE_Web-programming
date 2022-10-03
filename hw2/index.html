@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Ting-Hui Cheng</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+        name=“viewport"
+        content="width=device-width, initial-scale=1.0”
+     >
+     <title>Digital Photo Album</title>
+     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+ 
+<body onload="startTime()">
+    
+    <div class = "mb1">
+    <section>
+      <div class = "Bigp0"> 
+        <div class="avatar">
+          <div id ="t1">婷卉</div>
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(0)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">你</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>
+      
+      <div class = "Bigp1"> 
+        <div class="avatar" id='avacol1'>
+          <div id ="t1">阿咪</div>
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(1)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">阿咪/Mimi</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>
+      
+      
+      
+    <div class = "Bigp2"> 
+        <div class="avatar" id='avacol2'>
+          <img src="https://i.postimg.cc/05dbmk2y/images.jpg">
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(2)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">熊寶貝</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>
+    
+      
+      
+      <div class = "Bigp3"> 
+        <div class="avatar" id='avacol3'>
+          <img src="https://i.postimg.cc/hj2zzmmx/7007-jpg-wh300.jpg">
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(3)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">修爛木</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>
+      
+      <div class = "Bigp4"> 
+        <div class="avatar" id='avacol4'>
+          <div id ="t1">能貝貝</div>
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(4)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">能貝貝288</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>
+      
+    <div class = "Bigp5"> 
+        <div class="avatar" id='avacol5'>
+          <img src="https://i.postimg.cc/02FP3FVw/berkay-gumustekin-ngqyo2-AYYn-E-unsplash.jpg">
+          <div class="function" >
+          
+            <div class="block" id =f1 onclick='unpin(5)'>
+              <img src="https://i.postimg.cc/R0PFRHST/301317549-3363241997294880-5778087980435554553-n.png" >
+            </div>
+            
+            <div class="block" id =f3>
+              <img src="https://i.postimg.cc/hPbKsdM7/3-n.png" >
+            
+            </div>
+            <div class="block" id =f2>
+              <img src="https://i.postimg.cc/YSS2hC6L/301317549-3363241997294880-5778087980435554553-n-1.png" >
+            
+            </div>
+          </div>
+          
+        </div> 
+        <div class ="name6">小爬皮/Puppy</div>
+        <div class="pin">
+        <img src="https://i.postimg.cc/J0qkcv9s/1663560991222.jpg">
+        </div>
+        <div class="micro">
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+        </div>
+      </div>  
+    </section>
+      
+    <section>  
+      <div class = "container"> 
+        <div class = 'p0'>
+          <div class="avatar2" id ='people0'> 
+            <div id='T0'>婷卉</div>
+            
+          </div> 
+          
+          <div class="function2" id = 'hover0'>
+          
+            <div class="block2" id =ff1 onclick='pin(0)'>
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+              <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name0'>你</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          
+        </div> 
+        
+        
+        
+        <div class = 'p1'>
+          <div class="avatar2" id ='people1'> 
+            <div id='T1'>阿咪</div>
+            
+          </div> 
+          
+          <div class="function2" id = 'hover1'>
+          
+            <div class="block2" id =ff1 onclick='pin(1)'>
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+              <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name1'>阿咪/Mimi</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b1 onclick="del(1)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div> 
+
+        
+        
+        
+        <div class = p2>
+          <div class="avatar2" id ='bear'> 
+            <img id="imgp2" src="https://i.postimg.cc/05dbmk2y/images.jpg">
+          </div> 
+          
+          <div class="function2" id = 'hover2'>
+          
+            <div class="block2" id =ff1 onclick='pin(2)'>
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+              <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name2'>熊寶貝</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b2 onclick="del(2)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div> 
+
+        
+        
+        
+        
+        
+        <div class = p3>
+          <div class="avatar2" id ='roseapple'> 
+            <img id="imgp3" src="https://i.postimg.cc/hj2zzmmx/7007-jpg-wh300.jpg">
+          </div> 
+          <div class="function2" id = 'hover3'>
+          
+            <div class="block2" id =ff1 onclick='pin(3)'>
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+              <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name3'>修爛木</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b3 onclick="del(3)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div>
+
+        
+        
+        
+        
+        <div class = p4>
+          <div class="avatar2" id ='twoeight'> 
+            <div id = 'T4'>能貝貝</div>
+          </div>
+          
+          <div class="function2" id = 'hover4'>
+          
+            <div class="block2" id =ff1 onclick='pin(4)' >
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+             <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name4'>能貝貝288</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b4 onclick="del(4)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div>
+
+        
+        
+        
+        <div class = 'p5' id = 'wid5'>
+          <div class="avatar2" id ='puppy'>
+            <img id="imgp5" src="https://i.postimg.cc/02FP3FVw/berkay-gumustekin-ngqyo2-AYYn-E-unsplash.jpg">
+            
+          </div>
+          
+          <div class="function2" id = 'hover5'>
+          
+            <div class="block2" id =ff1 onclick='pin(5)'>
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+              <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name5'>小爬皮/Puppy</div>
+          <div class="micro3" id = m5>
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" >
+          </div>
+          <div class="delete3" id=b5 onclick="del(5)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div>
+        
+        
+        
+        <div class = p6>
+          <div class="avatar2" id ='twoeight'> 
+            <div id = 'T4'>能貝貝</div>
+          </div>
+          
+          <div class="function2" id = 'hover6'>
+          
+            <div class="block2" id =ff1 onclick='pin(6)' >
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+             <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name4'>能貝貝288</div>
+          <div class="micro2" id=m2>
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b4 onclick="del(6)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div>
+        
+        
+        
+        <div class = p7>
+          <div class="avatar2" id ='twoeight'> 
+            <div id = 'T4'>能貝貝</div>
+          </div>
+          
+          <div class="function2" id = 'hover7'>
+          
+            <div class="block2" id =ff1 onclick='pin(7)' >
+              <i class="material-icons" >push_pin</i>
+            </div>
+            
+            <div class="block2" id =ff3>
+              <i class="material-icons" >remove_circle_outline</i>
+            
+            </div>
+            <div class="block2" id =ff2>
+             <i class="material-icons" >mic_off</i>
+            
+            </div>
+          </div>
+          
+          <div class ='name4'>能貝貝288</div>
+          <div class="micro2">
+            <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png">
+          </div>
+          <div class="delete" id=b4 onclick="del(7)">
+            <img src= 'https://i.postimg.cc/8CF6yhhP/png-clipart-computer-icons-graphics-icon-design-illustration-delete-icon-logo-area-removebg-preview.png' >
+          </div>
+        </div>
+        
+        
+        
+        
+        
+      </div>
+    </section>
+     
+    <section> 
+      <div class = "con2"> 
+        
+        <div id="Div"><font color="white"><span id="nowDateTimeSpan"></span></font>  | Web Programming</div>
+      </div>
+      
+      <div class = "con3"> 
+        <div class="imicro" tabindex ='1'>
+          <img src="https://i.postimg.cc/nLVfzHqq/transparent-disable-icon-microphone-icon-mute-icon-5db868b06fa6b7-5910658015723665124573.png" id = "microphone">
+          <div class="hint">關閉麥克風(Ctrl + D)</div>
+        </div>
+        <div class="icam">
+          <img src="https://i.postimg.cc/YCYkVncd/1663567973270.jpg" id = "camera">
+          <div class="hint">關閉攝影機(Ctrl + E)</div>
+        </div>
+        <div class="istop">
+          <img src="https://i.postimg.cc/P5Xs3t45/1663567983655.jpg" id = "stop">
+          <div class="hint">舉手(ctrl + alt + h)</div>
+        </div>
+        <div class="ishare">
+          <img src="https://i.postimg.cc/bwDHjnLC/1663567995174.jpg" id = "share">
+          <div class="hint">立即分享螢幕畫面</div>
+        </div>
+        <div class="imore">
+          <img src="https://i.postimg.cc/bw9bPRkR/1663568002905.jpg" id = "more">
+          <div class="hint">更多選項</div>
+        </div>
+        <div class="iend">
+          <img src="https://i.postimg.cc/L6rv5vqK/1663568010357.jpg" id = "end">
+          <div class="hint">退出通話</div>
+        </div>
+      </div>
+      
+      <div class = "con4"> 
+        <div class="iinfo" >
+          <img src="https://i.postimg.cc/q7nKmjYx/1663564537598.jpg" id = "info">
+          <div class="hint">會議詳細資料</div>
+        </div>
+        <div class="iats">
+          <div class="hint">顯示所有參與者</div>
+          <img src="https://i.postimg.cc/x8gMv87r/1663564528331.jpg" id = "attenders">
+          
+        </div>
+        <div class="imes">
+          <img src="https://i.postimg.cc/MpL03cGq/1663564513948.jpg" id = "message">
+          <div class="hint">與所有參與者進行即時通話</div>
+        </div>
+        <div class="ievent">
+          <img src="https://i.postimg.cc/y60fJT89/1663564505550.jpg" id = "event">
+          <div class="hint">活動</div>
+        </div>
+        <div class="iowner">
+          <img src="https://i.postimg.cc/WpqB5rbb/1663564491380.jpg" id = "owner">
+          <div class="hint">主辦人控制項</div>
+        </div>
+      </div>
+      
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
