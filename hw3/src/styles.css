@@ -132,7 +132,6 @@ input[type='checkbox'] {
     height: 100%;
 }
 
-.todo-app__item-detail
 .todo-app__footer {
     width: 100%;
     display: flex;

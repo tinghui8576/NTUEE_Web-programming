@@ -257,8 +257,9 @@ class Main extends Component {
       })
       todo_list = li;
       this.setState({todo_list:todo_list});
-      if(todo_list.length === 0)
+      if(todo_list.length === 0){
         this.props.show(false, false);
+      }
       else
         this.showlist(this.props.show_state);
     }
@@ -268,6 +269,7 @@ class Main extends Component {
       ){
       
       this.showlist(this.props.show_state);
+    
     }
   } 
   render(){
@@ -311,9 +313,10 @@ class Buttons extends Component {
 
 class Clear extends Component {
   render(){
+    var clear_show = this.props.clear_show;
       return(
         <div className="todo-app__clean">
-          <button onClick ={this.props.clearing}>clear Completed</button>
+          {clear_show && <button onClick ={this.props.clearing}>clear Completed</button>}
         </div>
       );
   }
@@ -322,7 +325,7 @@ class Clear extends Component {
 class Foot extends Component {
   render(){
     var show = this.props.show;
-    var clear_show = this.props.clear_show;
+    
     return(
       <>
         {
@@ -330,7 +333,7 @@ class Foot extends Component {
           <footer className="todo-app__footer">
           <Total number={this.props.number}/>
           <Buttons unshow={this.props.unshow} allshow={this.props.allshow} cshow={this.props.cshow}/>
-          {clear_show && <Clear clearing ={this.props.clearing}/>}
+          <Clear clearing ={this.props.clearing} clear_show={this.props.clear_show}/>
         </footer>
         }
         
