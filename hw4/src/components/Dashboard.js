@@ -23,7 +23,6 @@ export default function Dashboard({ remainFlagNum, gameOver }) {
     interval = setInterval(()=>{
       
       setTime(time => time + 1);
-      console.log(gameOver, time)
     }, 1000);
     
   

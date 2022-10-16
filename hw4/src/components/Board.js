@@ -154,8 +154,8 @@ const Board = ({ boardSize, mineNum, backToHome }) => {
                 }
             })
         })
-        console.log(left)
-        if(left === remains && remains=== mineNum)
+        console.log(left, mineNum)
+        if(left === remains && remains=== parseInt(mineNum))
             winning = true;
         if(winning){
             console.log('win');
