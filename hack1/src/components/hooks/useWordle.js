@@ -31,7 +31,7 @@ const useWordle = (solution) => {
     // Handle the actions of `Enter`
     const handleEnter = () => {
         var set = [];
-        
+
         // (1) Enter is invalid if turn > 5
         if (turn > 5) {
             console.log("Error: You have used all your guesses");
