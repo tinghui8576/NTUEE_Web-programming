@@ -25,7 +25,7 @@ const guess = async(number) =>{
         }
         else{
             instance.response.status(503).send({ msg: 'server not responding or not connected' })
-            var msg ='server not responding or not connected'
+            //var msg ='server not responding or not connected'
         }
         
         return msg;
