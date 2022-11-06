@@ -61,7 +61,6 @@ const Body = () => {
       subject,
       score,
     });
-    console.log('add')
     if (!card) addErrorMessage(message);
     else addCardMessage(message);
   };
@@ -77,7 +76,7 @@ const Body = () => {
     });
 
     if (!messages) addErrorMessage(message);
-    else addRegularMessage(...messages);
+    else addRegularMessage(true, ...messages);
   };
 
   return (

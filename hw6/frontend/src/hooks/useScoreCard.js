@@ -6,10 +6,11 @@ const ERROR_MESSAGE_COLOR = '#fb3640';
 
 const ScoreCardContext = createContext({
   messages: [],
-
+  State: [],
   addCardMessage: () => {},
   addRegularMessage: () => {},
   addErrorMessage: () => {},
+  deleteMessage: () => {}
 });
 
 const makeMessage = (message, color) => {
@@ -18,22 +19,44 @@ const makeMessage = (message, color) => {
 
 const ScoreCardProvider = (props) => {
   const [messages, setMessages] = useState([]);
-
+  const [State, setState] = useState(false);
   const addCardMessage = (message) => {
-    setMessages([...messages, makeMessage(message, ADD_MESSAGE_COLOR)]);
+    if(State === true){
+      setMessages([
+        makeMessage(message, ADD_MESSAGE_COLOR)]);
+      setState(false);
+    }
+    else
+      setMessages([...messages, makeMessage(message, ADD_MESSAGE_COLOR)]);
   };
 
-  const addRegularMessage = (...ms) => {
-    setMessages([
-      ...messages,
-      ...ms.map((m) => makeMessage(m, REGULAR_MESSAGE_COLOR)),
-    ]);
+  const addRegularMessage = (state, ...ms) => {
+    if (state === false){
+      setMessages([
+        ...ms.map((m) => makeMessage(m, REGULAR_MESSAGE_COLOR))
+      ]);
+      setState(true);
+    }
+    else{
+      
+      setMessages([
+          ...messages,
+          ...ms.map((m) => makeMessage(m, REGULAR_MESSAGE_COLOR)),
+      ]);
+      
+    }
+    
   };
 
   const addErrorMessage = (message) => {
     setMessages([...messages, makeMessage(message, ERROR_MESSAGE_COLOR)]);
   };
 
+  const deleteMessage = async() =>{
+    console.log('delete')
+    setMessages(null)
+    setMessages([""])
+  }
   return (
     <ScoreCardContext.Provider
       value={{
@@ -41,6 +64,7 @@ const ScoreCardProvider = (props) => {
         addCardMessage,
         addRegularMessage,
         addErrorMessage,
+        deleteMessage
       }}
       {...props}
     />
