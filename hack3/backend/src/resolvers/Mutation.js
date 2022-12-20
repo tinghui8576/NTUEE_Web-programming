@@ -9,7 +9,6 @@ const Mutation = {
   },
 
   updateItem: async (parent, { input }, {itemModel, pubSub}) => {
-    console.log('ud')
     const item = await itemModel.findOneAndUpdate(
       { id: input.id },
       {
@@ -37,7 +36,12 @@ const Mutation = {
   },
   // TODO 5.2 Define the itemDelete mutation resolver
   // TODO 6.3 Publish itemDeleted
-
+  deleteItem: async (parent, { id }, {itemModel, pubSub}) =>{
+    console.log(id)
+    await itemModel.deleteOne({id});
+    
+    return id;
+  }
   // TODO 5.2 End
   // TODO 6.3 End
 

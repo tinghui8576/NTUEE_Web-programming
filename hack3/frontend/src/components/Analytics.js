@@ -10,8 +10,9 @@ function Analytics() {
   const {
     loading, error, data: itemsData, subscribeToMore,
   } = useQuery(GET_ITEMS_QUERY);
-  // TODO 2.2 End
   const { items } = itemsData;
+  // TODO 2.2 End
+  
 
   return (
     <div className="grid grid-cols-12 gap-6">

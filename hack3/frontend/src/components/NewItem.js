@@ -27,7 +27,6 @@ function NewItem() {
 
   const handleSubmit = (formData) => {
     // TODO 3.3 Apply the `createItem` callback function
-    console.log(formData)
     createItem({
       variables: {
         input: {
