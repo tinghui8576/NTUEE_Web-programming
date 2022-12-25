@@ -1,7 +1,7 @@
 # Web Programming HW#6
-功能包含: <br>
-1.Clear 清除database <br> 
-2."Name", "Subject" 以及 "Score" 加入 <br>
-3."Name", "Subject" 以及 "Score" 更新 <br>
-4.Query 搜尋<br>
-5.清除列印<br>
+全端服務的網址: hw9.up.railway.app <br>
+服務功能簡述:如作業六，可加入成績與姓名並可以搜尋 <br> 
+Deployment 的流程: <br>
+先將frontend跟backend包成docker後，上傳至github repo，再從railway處將repo抓下來，運行docker以deploy整個網頁<br>
+遇到的困難以及解決的⽅式: <br>
+1.在寫docker的時候沒有注意到順序<br>
